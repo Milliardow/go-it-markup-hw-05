@@ -100,9 +100,36 @@
             Чем мы занимаемся
         </h2>
         <ul class="specific-list">
-            <li class="specific-item"><img src="./image/1.jpg" width="370" alt="Программист пишет код"/></li>
-            <li class="specific-item"><img src="./image/2.jpg" width="370" alt="Мобильная разработка"/></li>
-            <li class="specific-item"><img src="./image/3.jpg" width="370" alt="Планшет с палитрой"/></li>
+            <li class="specific-item">
+                <div class="thumbs">
+                <img src="./image/1.jpg" width="370" alt="Программист пишет код" />
+            </div>
+            <div class="thumbs-div">
+                <p class="thumbs-text">
+                    десктопные приложения
+                </p>
+            </div>
+        </li>
+            <li class="specific-item">
+                <div class="thumbs">
+                <img src="./image/2.jpg" width="370" alt="Мобильная разработка" />
+            </div>
+            <div class="thumbs-div">
+                <p class="thumbs-text">
+                    мобильные приложения
+                </p>
+            </div>
+        </li>
+            <li class="specific-item">
+                <div class="thumbs">
+                <img src="./image/3.jpg" width="370" alt="Планшет с палитрой" />
+            </div>
+            <div class="thumbs-div">
+                <p class="thumbs-text">
+                    дизайнерские решения
+                </p>
+            </div>
+        </li>
         </ul>
         </div>
     </section>
@@ -365,19 +392,7 @@
     </div>
 </div>
 </footer>
-<script>
-    const refs = {
-            openModalBtn: document.querySelector('[data-modal-open]'),
-            closeModalBtn: document.querySelector('[data-modal-close]'),
-            modal: document.querySelector('[data-modal]'),
-        };
-
-        refs.openModalBtn.addEventListener('click', toggleModal);
-        refs.closeModalBtn.addEventListener('click', toggleModal);
-
-        function toggleModal() {
-            refs.modal.classList.toggle('is-hidden');
-        }
+<script src="./js/modal.js">
 </script>
 </body>
 </html>
