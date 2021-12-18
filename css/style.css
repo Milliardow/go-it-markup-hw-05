@@ -591,7 +591,7 @@ ul {
   padding-top: 60px;
 }
 .common {
-  padding-top: 75px;
+  padding-top: 72px;
   margin-left: 70px;
 }
 
@@ -605,6 +605,11 @@ ul {
 }
 .footer {
   background-color: var(--footer-backgroung-color);
+  display: flex;
+}
+.footer > .container {
+  display: flex;
+  align-items: baseline;
 }
 .logo-footer {
   font-family: Raleway, sans-serif;
@@ -700,8 +705,8 @@ ul {
   top: 0;
   left: 0;
 
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   background: rgba(0, 0, 0, 0.2);
   opacity: 1;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -712,13 +717,14 @@ ul {
   pointer-events: none;
 }
 .backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.9);
+  transform: translate(-50%, -50%) scale(0.9) rotate(360deg);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
   position: absolute;
-  transform: translate(-50%, -50%) scale(1);
-  transition: scale 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translate(-50%, -50%) scale(1) rotate(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   top: 50%;
   left: 50%;
   border-radius: 4px;
